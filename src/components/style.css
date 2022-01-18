@@ -1,20 +1,23 @@
 /* navbar */
 .navbar1 {
-  background-color: black;
+  background-color: transparent;
   color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid black;
   padding: 20px;
   font-size: 0.9rem;
   top: 0;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: sticky;
-  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+}
+.navbar1:hover {
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 .nav-items {
+  color: inherit;
+  text-decoration: inherit;
   color: white;
   padding: 10px;
   font-size: 1.2rem;
@@ -24,10 +27,12 @@
 
 .nav-items:hover {
   color: orange;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 7px;
 }
 
 #title1 {
-  color: white;
+  color: orange;
   font-size: 1.5rem;
   float: left;
 }
@@ -53,7 +58,7 @@
   transition: 0.3s;
 }
 
-.card:hover {
+.card :hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -62,7 +67,7 @@
 .container2 {
   display: flex;
   flex-direction: row;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   margin: auto;
 }
@@ -72,18 +77,106 @@
   color: white;
   padding: 20px;
   flex: 50%;
-  background-image: linear-gradient(to top, black 0%, rgb(32, 30, 30) 100%) !important;
+  background-image: linear-gradient(to top, black 0%, rgb(32, 30, 30) 100%);
 }
-.item:hover {
+.item :hover {
   color: orange;
   cursor: pointer;
 }
 
+/* RoadMap */
+.title1 {
+  padding: 150px 0px 50px;
+  font-size: 2.5rem;
+  margin: 0;
+}
+#grad1 {
+  /* position: absolute; */
+  background-image: linear-gradient(to top, #090909 0%, #1e4459 100%);
+  color: white;
+  z-index: -1;
+  overflow: hidden;
+}
+h1 {
+  font-size: 1.6rem;
+  color: orange;
+}
+hr {
+  width: 10%;
+  background-color: black;
+}
+.vertical {
+  border-left: 5px dotted white;
+  height: 350%;
+  position: absolute;
+  left: 50%;
+}
+
+.div1 {
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+.object1 {
+  padding: 0px 280px 0px 50px;
+}
+.object2 {
+  padding: 0px 45px 0px 280px;
+}
+.div2 {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+/* responsive */
+
 @media (max-width: 800px) {
+  .container1 {
+    height: 800px;
+  }
+  #title1 {
+    margin: 10px;
+    padding: 0;
+  }
+
   .container2 {
     flex-direction: column;
   }
   .navbar1 {
     flex-direction: column;
+    overflow: hidden;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+  }
+  .nav-items {
+    font-size: 0.8rem;
+    padding: 3px;
+  }
+  .vertical {
+    display: none;
+  }
+  .title1 {
+    font-size: 1.2rem;
+  }
+  #grad1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .div1,
+  .div2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .object1,
+  .object2 {
+    padding: 0px 50px;
+    margin: 10px 0px;
+    font-size: 0.8rem;
   }
 }

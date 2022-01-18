@@ -1,14 +1,14 @@
 import React from 'react'
 import "./style2.css"
 
-const NFT = () => {
+const Faq = () => {
     return (
         <>
             <div className='common-container'>
-                <h1 id='title2'>NFT</h1>
+                <h1 id='title2'>FAQ</h1>
             </div>
         </>
     )
 }
 
-export default NFT
+export default Faq

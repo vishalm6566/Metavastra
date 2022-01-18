@@ -1,7 +1,10 @@
 import React from 'react'
 import Video from './scifiStudio0001-0300.mp4'
+import "./style.css"
 
 const Home = () => {
+
+
     return (
         <>
             <div className='container1'>

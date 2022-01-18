@@ -1,14 +1,14 @@
 import React from 'react'
 import "./style2.css"
 
-const About = () => {
+const Contact = () => {
     return (
         <>
         <div className='common-container'>
-          <h1 id='title2'>About</h1>  
-        </div>
+          <h1 id='title2'>Contact</h1>  
+        </div>  
         </>
     )
 }
 
-export default About
+export default Contact

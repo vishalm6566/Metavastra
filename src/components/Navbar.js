@@ -6,6 +6,7 @@ const Navbar = () => {
 
     const audio = new Audio();
     audio.src = "click1.wav";
+
     return (
         <>
             <div className='navbar1'>     
