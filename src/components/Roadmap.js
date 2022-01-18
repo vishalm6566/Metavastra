@@ -17,8 +17,8 @@ const Roadmap = () => {
         <>
 
             <div id='grad1'>
-                <h1 className="title1" align="center">ROAD MAP<hr /></h1>
-
+                <h1 className="title1" align="center">ROAD MAP</h1>
+                {/* <hr  id='underline'/> */}
                 <div className="vertical"></div>
                 <div className="div1" align="right" data-aos="fade-left">
                     <h1 className="object1">MILESTONE1</h1>

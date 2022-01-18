@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className='navbar1'>     
                 <span id='title1'>Metavastra</span>           
                 <NavLink className = "nav-items" onClick={audio.play()} to='/'>Home</NavLink>
-                <NavLink className = "nav-items" onClick={audio.play()} to='/nft'>NFT</NavLink>
+                <NavLink className = "nav-items" onClick={audio.play()} to='/all-items'>All-items</NavLink>
                 <NavLink className = "nav-items" onClick={audio.play()} to='/roadmap'>RoadMap</NavLink>
                 <NavLink className = "nav-items" onClick={audio.play()} to='/opensea'>Opensea</NavLink>
                 <NavLink className = "nav-items" onClick={audio.play()} to='/about'>About</NavLink>

@@ -12,17 +12,16 @@ const Home = () => {
             </div>
             <div class="container2">
                 <div class="item" onClick={() => window.open("http://discord.com")}>
-                    <h4>Join our Discord</h4>
+                    <h4 className = "item-element">Join our Discord</h4>
                     <img src="discord1.png" alt=''/>
                 </div>
                 <div class="item" onClick={() => window.open("http://twitter.com")}>
-                    <h4>Connect on Twitter</h4>
+                    <h4 className = "item-element">Connect on Twitter</h4>
                     <img src="twitter1.png" alt=''/>
                 </div>
                 <div class="item" onClick={() => window.open("http://instagram.com")}>
-                    <h4>Follow on Instagram</h4>
+                    <h4 className = "item-element">Follow on Instagram</h4>
                     <img src="instagram1.png" alt=''/>
-
                 </div>
 
             </div>
