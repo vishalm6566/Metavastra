@@ -81,7 +81,7 @@
   color: white;
   padding: 20px;
   flex: 50%;
-  background-image: linear-gradient(to top, black 0%, rgb(32, 30, 30) 100%);
+  /* background-image: linear-gradient(to top, black 0%, rgb(32, 30, 30) 100%); */
 }
 .item :hover {
   color: orange;
@@ -151,7 +151,7 @@ h1 {
     flex-direction: column;
     overflow: hidden;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     padding: 10px;
   }
   .nav-items {

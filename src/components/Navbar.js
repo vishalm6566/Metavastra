@@ -11,14 +11,13 @@ const Navbar = () => {
         <>
             <div className='navbar1'>     
                 <span id='title1'>Metavastra</span>           
-                <NavLink className = "nav-items" onClick={audio.play()} to='/'>Home</NavLink>
-                <NavLink className = "nav-items" onClick={audio.play()} to='/all-items'>All-items</NavLink>
-                <NavLink className = "nav-items" onClick={audio.play()} to='/roadmap'>RoadMap</NavLink>
-                <NavLink className = "nav-items" onClick={audio.play()} to='/opensea'>Opensea</NavLink>
-                <NavLink className = "nav-items" onClick={audio.play()} to='/about'>About</NavLink>
-                <NavLink className = "nav-items" onClick={audio.play()} to='/faq'>Faq</NavLink>
-                <NavLink className = "nav-items" onClick={audio.play()} to='/contact'>Contact</NavLink>   
-            </div>
+                <NavLink className = "nav-items" muted='muted' autoPlay onClick={audio.play()} to='/home'>Home</NavLink>
+                <NavLink className = "nav-items" muted='muted' autoPlay onClick={audio.play()} to='/all-items'>All-items</NavLink>
+                <NavLink className = "nav-items" muted='muted' autoPlay onClick={audio.play()} to='/'>RoadMap</NavLink>
+                <NavLink className = "nav-items" muted='muted' autoPlay onClick={audio.play()} to='/opensea'>Opensea</NavLink>
+                <NavLink className = "nav-items" muted='muted' autoPlay onClick={audio.play()} to='/about'>About</NavLink>
+                <NavLink className = "nav-items" muted='muted' autoPlay onClick={audio.play()} to='/faq'>Faq</NavLink>
+                <NavLink className = "nav-items" muted='muted' autoPlay onClick={audio.play()} to='/contact'>Contact</NavLink>            </div>
         </>
     )
 }

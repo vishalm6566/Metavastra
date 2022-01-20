@@ -9,27 +9,25 @@ body {
   overflow-x: hidden; 
 }
 .row {
-  background-image: linear-gradient(to top, #090909 0%, #1e4459 100%);
-  padding: 20px;
+  /* background-image: linear-gradient(to top, #090909 0%, #1e4459 100%); */
+  background-image: url("backgroundwebpageimage.jpg");
+  padding: 150px;
   margin: 0 -5px;
 }
 #title3 {
-  padding-top: 100px;
-  margin-top: 0px;
+  margin-bottom: 60px;
   font-size: 2rem;
   text-align: center;
 }
 /* Float four columns side by side */
 .column {
     float: left;
-    width: 33%;
-    max-width: 350px;
-    padding: 0 10px;
-    margin: 70px;
-    overflow: hidden;
+    width: 33.33%;
+    padding: 0px 10px;
+    margin-bottom: 20px;
 }
 .column :hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -42,12 +40,17 @@ body {
 
 /* Responsive columns */
 @media screen and (max-width: 800px) {
+  #title3{
+    padding: 100px 0px 0px 0px;
+  }
+  .row{
+    padding: 10%;
+  }
   .column {
     width: 100%;
     display: block;
-    /* margin-bottom: 20px; */
-    margin: 5px;
-    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 10px;
   }
 }
 
