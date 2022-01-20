@@ -99,6 +99,7 @@
 
   #title4 { 
     margin-top: 30px;
+    padding-bottom: 30px;
   }
   #img-info {
     flex-direction: column;
@@ -111,7 +112,10 @@
   }
   #main-img {
     width: 100%;
-    padding-left: 30px;
+    /* padding-left: 30px; */
+  }
+  #main-img1{
+    width: 100%;
   }
 
   .grid {
