@@ -9,8 +9,8 @@ body {
   overflow-x: hidden;
 }
 .row {
-  /* background-image: linear-gradient(to top, #090909 0%, #1e4459 100%); */
-  background-image: url("backgroundwebpageimage.jpg");
+  background-image: linear-gradient(to top, #090909 0%, #1e4459 100%);
+  /* background-image: url("backgroundwebpageimage.jpg"); */
   background-size: 100% 100%;
   padding: 150px;
   margin: 0 -5px;

@@ -22,8 +22,8 @@ function App() {
     < Route exact path="/" element={<Roadmap/>} />
     < Route exact path="/opensea" element={<Opensea/>} />
     < Route exact path="/about" element={<About/>} />
-    < Route exact path="/all-items/*" element={<Allitems/>}/>
-    < Route exact path="/all-items/info1" element={<Info1/>}/>
+    < Route exact path="/nft/*" element={<Allitems/>}/>
+    < Route exact path="/nft/info1" element={<Info1/>}/>
     <Route/>
     < Route exact path="/faq" element={<Faq/>} />
     < Route exact path="/contact" element={<Contact/>} />
