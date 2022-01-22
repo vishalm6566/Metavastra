@@ -4,18 +4,26 @@ import Sound from './hover-engine-6391.mp3'
 import "./style.css"
 
 const Home = () => {
+    const audio2 = document.getElementById("audio2");
+    const muteButton = document.getElementById("mute-btn");
+
 
     const audioMute = () => {
-        const audio2 = document.getElementById("audio2");
-        audio2.pause();
-        audio2.innerHTML = `<i class="fa fa-pause-circle" aria-hidden="true"></i>`
+        if (audio2.paused) {
+            audio2.play();
+            muteButton.innerHTML = '<i class="fa fa-play-circle-o" aria-hidden="true"></i>';
+        }
+        else {
+            audio2.pause();
+            muteButton.innerHTML = '<i class="fa fa-pause-circle-o" aria-hidden="true"></i>';
+        }
     }
 
 
     return (
         <>
             <div className='container1'>
-                <button id='mute-btn' onClick={audioMute}><i class="fa fa-play-circle" aria-hidden="true"></i></button>
+                <button id='mute-btn' onClick={audioMute} ><i class="fa fa-play-circle-o" aria-hidden="true"></i></button>
                 <video id='video1' autoPlay loop muted src={Video} ></video>
                 <audio id="audio2" src={Sound} autoPlay loop ></audio>
             </div>
