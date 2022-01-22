@@ -4,11 +4,13 @@ import Sound from './hover-engine-6391.mp3'
 import "./style.css"
 
 const Home = () => {
-    const audio2 = document.getElementById("audio2");
-    const muteButton = document.getElementById("mute-btn");
+
 
 
     const audioMute = () => {
+        const audio2 = document.getElementById("audio2");
+        const muteButton = document.getElementById("mute-btn");
+        
         if (audio2.paused) {
             audio2.play();
             muteButton.innerHTML = '<i class="fa fa-play-circle-o" aria-hidden="true"></i>';
