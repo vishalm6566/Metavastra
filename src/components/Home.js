@@ -34,20 +34,22 @@ const Home = () => {
                     <h4 className="item-element">Join our Discord</h4>
                     <img src="discord1.png" alt='' />
                 </div>
-                <div className="item" onClick={() => window.open("http://twitter.com")}>
+                <div className="item" onClick={() => window.open("https://twitter.com/metavastra")}>
                     <h4 className="item-element">Connect on Twitter</h4>
                     <img src="twitter1.png" alt='' />
                 </div>
-                <div className="item" onClick={() => window.open("http://instagram.com")}>
+                <div className="item" onClick={() => window.open("https://www.instagram.com/metavastra/")}>
                     <h4 className="item-element">Follow on Instagram</h4>
                     <img src="instagram1.png" alt='' />
                 </div>
             </div>
             <div className='container3'>
+                <div className='sub-container3' style={{background : "black" ,padding : "10%" , backgroundImage: "linear-gradient(to top, #090909 0%, #1e4459 100%)"}}>
                 <h1 style={{ padding: "2%" }}>Never miss an update</h1>
                 <p style={{ padding: "1% 0 2% 0", color: "white" }}>Subscribe our newsletter for the latest news, drops and collectibles</p>
-                <input type="text" placeholder='Enter your email' style={{ padding: "0.5%" }} />
+                <input type="email" placeholder='Enter your email' style={{ padding: "0.5%", width : "26%"}} />
                 <button id='btn-subscribe'>Subscribe</button>
+                </div>
             </div>
 
         </>
